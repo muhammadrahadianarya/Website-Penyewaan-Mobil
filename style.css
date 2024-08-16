@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Navbar */
+#navbar{
+    background-color: #333;
+}
+
+#navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+#navbar .container .right-container{
+    display: flex;
+    align-items: center;
+}
+
+#navbar .container .right-container .logo{
+    margin-right: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#navbar .container .right-container .logo img{
+    width: 45px;
+    margin-right: 20px;
+}
+
+#navbar .container .right-container .navigasi ul{
+    list-style: none; 
+    display: flex;   
+    gap: 20px;
+}
+
+#navbar .container .right-container .navigasi ul a{
+    text-decoration: none;    
+    color: white;
+    padding: 7px;    
+}
+
+#navbar .container .right-container .navigasi ul a:hover{
+    background-color: rgb(2, 173, 39);
+    border-radius: 3px;
+}
+
+#navbar .container .left-container .book a{
+    text-decoration: none;
+    color: white;
+    background-color: #f04;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+#navbar .container .left-container .book a:hover{
+    background-color: rgb(2, 173, 39);
+}
+
+/* Header Carousel */
+#carousel{
+    height: 400px;
+    background-image: url(image/carousel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 100%;
+    background-position-x: 50%;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
+
+#carousel .container{
+    width: 100%;
+    text-align: center; 
+    display: flex;      
+    justify-content: space-evenly; 
+}
+
+#carousel .container .left-container{    
+    width: 40%;
+    margin: 40px;
+}
+
+#carousel .container .right-container{
+    width: 40%;
+    height: 200px;    
+    opacity: 0.5;
+
+}
+
+#carousel .container .left-container h1{
+    font-size: 40px;
+    margin: 20px;
+}
+
+#carousel .container h2{
+    font-size: 20px;
+    font-weight: 200;
+    margin: 10px;    
+}
+
+#carousel .container p{
+    font-size: 16px;   
+    margin: 30px;    
+}
+
+#carousel .container a{
+    background-color: #f04;     
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+#carousel .container a:hover{
+    background-color: rgb(2, 173, 39);
+}
+
+/* Section Facility */
+#facility{
+    display: flex;
+    justify-content: center;
+    background-color: #ebebeb;
+}
+
+#facility .container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px;        
+    box-sizing: border-box;
+}
+
+#facility .container .mini-container{
+    width: 23%;
+}
+
+#facility .container .mini-container h4{
+    font-size: 19px;
+    margin: 15px;
+}
+
+#facility .container .mini-container p{
+    margin-bottom: 15px;
+}
+
+/* Section Fleet */
+#fleet{
+    margin: 40px 0 20px;
+}
+
+#fleet .container{
+    display: flex;
+    text-align: center;
+    justify-content: center;    
+    flex-direction: column;
+}
+
+#fleet .container .big-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#fleet .container .big-container .mini-container{
+    background-color: #ebebeb;
+    width: 32%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    flex-grow: 1;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+#fleet .container .big-container .mini-container img{
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    margin: 10px 0 20px;
+    background-color: #e4e4e4;
+}
+
+#fleet .container .big-container .mini-container h4{
+    font-size: 19px;
+}
+
+#fleet .container .big-container .mini-container p{
+    margin: 10px 0 20px;
+}
+
+#fleet .container .big-container .mini-container a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #f04; 
+    color: white;    
+    border-radius: 5px;
+}
+
+#fleet .container .big-container .mini-container a:hover{
+    background-color: rgb(2, 173, 39);
+}
+
+/* Section Testimoni */
+#testimoni{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin: 20px 0 0 0;     
+}
+
+#testimoni .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;        
+}
+
+#testimoni .container .judul{
+    margin: 0 0 20px 0;
+}
+
+#testimoni .container .big-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #ebebeb;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#testimoni .container .big-container .mini-container{
+    background-color: white;
+    width: 32%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#testimoni .container .big-container .mini-container p{
+    margin: 10px;
+}
+
+#testimoni .container .big-container .mini-container h5{
+    font-size: 16px;
+}
+
+/* Section Contact */
+#contact{
+
+}
+
+#contact .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#contact .container .judul{
+    margin: 20px 0 20px 0;
+}
+
+#contact .container .big-container{
+    display: flex;
+    width: 100%;    
+    justify-content: center;    
+    box-sizing: border-box;    
+}
+
+#contact .container .big-container .mini-container{
+    width: 50%;        
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+
+#contact .container .big-container .left{
+    line-height: 30px;    
+}
+
+#contact .container .big-container .right{
+    background-color: #ebebeb;
+    border-radius: 10px;
+}
+
+#contact .container .big-container .right form{
+    display: flex;    
+    flex-direction: column;       
+}
+
+#contact .container .big-container .right h4{
+    margin-bottom: 15px;
+}
+
+#contact .container .big-container .right form input{
+    height: 30px;
+    margin: 5px 0 10px 0;
+    border-radius: 5px;
+    border: 1px solid rgb(199, 199, 199);
+}
+
+#contact .container .big-container .right form .pesan{
+    height: 50px;
+}
+
+#contact .container .big-container .right form .btn{
+    background-color: #f04; 
+    color: white;
+    width: 10%;
+}
+
+#contact .container .big-container .right form .btn:hover{
+    background-color: rgb(2, 173, 39);   
+}
+
+/* Footer */
+#footer{
+    margin-top: 20px;
+}
+
+#footer .container{
+    padding: 20px 20px 20px 100px;
+    display: flex;
+    justify-content: space-between;    
+    width: 100%;    
+    box-sizing: border-box;
+    color: white;
+    background-color: #333;
+}
+
+#footer .container .mini-container{
+    width: 20%;   
+    display: flex; 
+    flex-direction: column;
+}
+
+#footer .container .satu{
+    width: 40%;
+}
+
+#footer .container .mini-container h4{
+    margin-bottom: 15px;
+}
+
+#footer .container .mini-container p{
+    margin: 10px 0;
+}
+
+#footer .container .mini-container a{
+    text-decoration: none;
+    color: white;
+}
